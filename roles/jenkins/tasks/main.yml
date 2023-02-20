@@ -3,18 +3,18 @@
     config: "{{ lookup('file', 'templates/folder.xml') }}"
     name: "{{item.name}}"
     password: admin123
-    url: http://:8080
+    url: http://172.31.12.212:8080
     user: admin
   loop:
     - { name: "ci-pipelines"}
-    - { name: "terraform"}
+
 
 - name: Include Multi Branch task file
   ansible.builtin.include_tasks: mbranch.yml
   loop:
     - { name: "cart"}
-    - { name: "catalogue"}
-    - { name: "user"}
-    - { name: "shipping"}
-    - { name: "payment"}
-    - { name: "frontend"}
+#    - { name: "catalogue"}
+#    - { name: "user"}
+#    - { name: "shipping"}
+#    - { name: "payment"}
+#    - { name: "frontend"}
