@@ -12,3 +12,8 @@
   ansible.builtin.include_tasks: mbranch.yml
   loop:
     - { name: "cart" }
+    - { name: "catalogue" }
+    - { name: "frontend" }
+    - { name: "mongodb" }
+    - { name: "mysql" }
+    - { name: "payment" }
