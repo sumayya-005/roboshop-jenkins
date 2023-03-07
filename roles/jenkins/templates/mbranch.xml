@@ -7,7 +7,7 @@
         <owner class="org.jenkinsci.plugins.workflow.multibranch.WorkflowMultiBranchProject" reference="../.."/>
     </folderViews>
     <healthMetrics/>
-    <icon class="jenkins.branch.MetadataActionFolderIcon" plugin="branch-api@2.1071.v1a_188a_562481">
+    <icon class="jenkins.branch.MetadataActionFolderIcon" plugin="branch-api">
         <owner class="org.jenkinsci.plugins.workflow.multibranch.WorkflowMultiBranchProject" reference="../.."/>
     </icon>
     <orphanedItemStrategy class="com.cloudbees.hudson.plugins.folder.computed.DefaultOrphanedItemStrategy" plugin="cloudbees-folder">
@@ -22,7 +22,7 @@
         <data>
             <jenkins.branch.BranchSource>
                 <source class="jenkins.plugins.git.GitSCMSource" plugin="git">
-                    <id>2abecaba-3263-4a0a-817a-78516e0cf8be</id>
+                    <id>31ec3128-2972-4db5-bebe-61c720325fc3</id>
                     <remote>https://github.com/sumayya-005/{{item.name}}</remote>
                     <credentialsId></credentialsId>
                     <traits>
