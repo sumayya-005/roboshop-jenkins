@@ -9,5 +9,5 @@
     config: "{{ lookup('file', '/tmp/mbranch.xml') }}"
     name: "ci-pipelines/{{item.name}}"
     password: admin123
-    url: http://172.31.15.147:8080
+    url: http://172.31.1.146:8080
     user: admin
