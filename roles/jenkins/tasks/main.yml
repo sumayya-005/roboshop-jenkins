@@ -7,6 +7,7 @@
     user: admin
   loop:
     - { name: "ci-pipelines"}
+    - { name: "terraform"}
 
 - name: Include Multi Branch task file
   ansible.builtin.include_tasks: mbranch.yml
@@ -17,3 +18,8 @@
     - { name: "payment" }
     - { name: "shipping" }
     - { name: "user" }
+
+- name: Include single Branch task file
+  ansible.builtin.include_tasks: sbranch.yml
+  loop:
+    - { name: "infra-create" }
